@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/row_padding_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/row_padding_vertical" >
+
+            <TextView
+                android:id="@+id/chapter_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/story_title_padding"
+                android:paddingRight="@dimen/story_title_padding"
+                android:paddingTop="@dimen/story_title_padding"
+                android:textColor="@color/story_title"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/chapter_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chapter_title"
+                android:paddingBottom="@dimen/chapter_count_padding_bottom"
+                android:paddingLeft="@dimen/story_title_padding"
+                android:paddingRight="@dimen/story_title_padding"
+                android:textSize="@dimen/chapter_count" />
+        </RelativeLayout>
+
+</LinearLayout>
